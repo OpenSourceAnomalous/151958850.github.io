@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSA Document Repository</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg-primary: #fafafa;
+            --color-fg-primary: #363737;
+            --color-fg-secondary: #757575;
+            --color-detail: rgba(200, 200, 200, 0.5);
+            --color-accent: #61aff4;
+            --header-height: 64px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: var(--color-bg-primary);
+            color: var(--color-fg-primary);
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--header-height);
+            background: white;
+            border-bottom: 1px solid var(--color-detail);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+        }
+
+        .header-logo {
+            height: 32px;
+        }
+
+        .nav {
+            height: 48px;
+            border-bottom: 1px solid var(--color-detail);
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            margin-top: var(--header-height);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 32px;
+            border: 1px solid var(--color-detail);
+        }
+
+        h1, h2 {
+            font-family: 'Roboto Slab', serif;
+            color: var(--color-fg-primary);
+            margin: 0 0 24px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 24px;
+            line-height: 1.3;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--color-detail);
+        }
+
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .pdf-item {
+            background: var(--color-bg-primary);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--color-detail);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .pdf-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .pdf-link {
+            color: var(--color-fg-primary);
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .pdf-link:hover {
+            color: var(--color-accent);
+        }
+
+        .pdf-icon {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="images/osa-logo.png" alt="Open Source Anomalous" class="header-logo">
+    </header>
+
+    <nav class="nav">
+        <a href="#" style="color: var(--color-accent); text-decoration: none; font-weight: 500;">Document Repository</a>
+    </nav>
+
+    <div class="container">
+        <h1>Document Repository</h1>
+
+        <section class="section">
+            <h2>FOIA Documents</h2>
+            <div class="pdf-grid">
+                <div class="pdf-item">
+                    <a href="FOIAS/Fa24_4441_Emailed_Release.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        FA24-4441 Release
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="FOIAS/Fa25_0839_Emailed_Release.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        FA25-0839 Release
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Greer DPI Files</h2>
+            <div class="pdf-grid">
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi1.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 1
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi2.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 2
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi3.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 3
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi4.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 4
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi5.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 5
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi6.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 6
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi7.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 7
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi8.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 8
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi9.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 9
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi10.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 10
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi11.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 11
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi12.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 12
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi13.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 13
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi14.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 14
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi15.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 15
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi16.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 16
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi17.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 17
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi18.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 18
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi19.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 19
+                    </a>
+                </div>
+                <div class="pdf-item">
+                    <a href="GreerDPIFiles/dpi20.pdf" class="pdf-link" target="_blank">
+                        <svg class="pdf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <path d="M14 2v6h6"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                            <path d="M10 9H8"></path>
+                        </svg>
+                        DPI Document 20
+                    </a>
+                </div>
+                <!-- Repeat for each DPI file -->
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Add any interactive features here
+        document.addEventListener('DOMContentLoaded', function() {
+            // Automatically populate DPI files from directory if possible
+        });
+    </script>
+</body>
+</html>
