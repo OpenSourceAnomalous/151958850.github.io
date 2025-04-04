@@ -163,7 +163,21 @@
             border: none;
         }
 
-        /* Modal viewer styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .section {
+                padding: 24px;
+            }
+
+            .pdf-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Add these new styles for the modal viewer */
         .modal-viewer {
             display: none;
             position: fixed;
@@ -225,41 +239,6 @@
             border: none;
             background: white;
         }
-
-        /* Media query for mobile devices */
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 16px;
-            }
-
-            .section {
-                padding: 24px;
-            }
-
-            .pdf-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            /* Hide preview button on mobile */
-            .preview-button {
-                display: none;
-            }
-            
-            /* Make download button take full width on mobile */
-            .pdf-actions {
-                flex-direction: column;
-            }
-            
-            .button.primary {
-                width: 100%;
-                justify-content: center;
-            }
-            
-            /* Adjust modal margins for mobile */
-            .modal-content {
-                margin: 20px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -280,7 +259,7 @@
                 <div class="pdf-item">
                     <h3>FA25-1635 Release</h3>
                     <div class="pdf-actions">
-                        <button class="button preview-button" onclick="showPreview('FA25-1635 Release', 'FOIAs/FA25-1635-Emailed-Release-appeal.pdf')">Preview</button>
+                        <button class="button" onclick="showPreview('FA25-1635 Release', 'FOIAs/FA25-1635-Emailed-Release-appeal.pdf')">Preview</button>
                         <a href="/151958850.github.io/FOIAs/FA25-1635-Emailed-Release-appeal.pdf" download class="button primary">Download</a>
                     </div>
                 </div>
@@ -288,7 +267,7 @@
                 <div class="pdf-item">
                     <h3>FA25-0839 Release</h3>
                     <div class="pdf-actions">
-                        <button class="button preview-button" onclick="showPreview('FA25-0839 Release', 'FOIAs/Fa25_0839_Emailed_Release.pdf')">Preview</button>
+                        <button class="button" onclick="showPreview('FA25-0839 Release', 'FOIAs/Fa25_0839_Emailed_Release.pdf')">Preview</button>
                         <a href="/151958850.github.io/FOIAs/Fa25_0839_Emailed_Release.pdf" download class="button primary">Download</a>
                     </div>
                 </div>
@@ -296,7 +275,7 @@
                 <div class="pdf-item">
                     <h3>FA25-1473 Release</h3>
                     <div class="pdf-actions">
-                        <button class="button preview-button" onclick="showPreview('FA25-1473 Release', 'FOIAs/FA25-1473-Emailed-RELEASE-target-files.pdf')">Preview</button>
+                        <button class="button" onclick="showPreview('FA25-1473 Release', 'FOIAs/FA25-1473-Emailed-RELEASE-target-files.pdf')">Preview</button>
                         <a href="/151958850.github.io/FOIAs/FA25-1473-Emailed-RELEASE-target-files.pdf" download class="button primary">Download</a>
                     </div>
                 </div>
@@ -306,18 +285,91 @@
         <section class="section">
             <h2>Greer DPI Files</h2>
             <div class="pdf-grid">
+                <!-- DPI Files -->
+                <!-- <div class="pdf-item">
+                    <h3>DPI Document 1</h3>
+                    <div class="pdf-actions">
+                        <button class="button" onclick="showPreview('DPI Document 1', 'GreerDPIFiles/dpi1.pdf')">Preview</button>
+                        <a href="/151958850.github.io/GreerDPIFiles/dpi1.pdf" download class="button primary">Download</a>
+                    </div>
+                </div> -->
+
                 <div class="pdf-item">
                     <h3>DPI Document 2</h3>
                     <div class="pdf-actions">
-                        <button class="button preview-button" onclick="showPreview('DPI Document 2', 'GreerDPIFiles/dpi2.pdf')">Preview</button>
+                        <button class="button" onclick="showPreview('DPI Document 2', 'GreerDPIFiles/dpi2.pdf')">Preview</button>
                         <a href="/151958850.github.io/GreerDPIFiles/dpi2.pdf" download class="button primary">Download</a>
                     </div>
                 </div>
 
+                <!-- <div class="pdf-item">
+                    <h3>DPI Document 3</h3>
+                    <div class="pdf-actions">
+                        <button class="button" onclick="showPreview('DPI Document 3', 'GreerDPIFiles/dpi3.jpg')">Preview</button>
+                        <a href="/151958850.github.io/GreerDPIFiles/dpi3.jpg" download class="button primary">Download</a>
+                    </div>
+                </div> -->
+
+                <!-- <div class="pdf-item">
+                    <h3>DPI Document 4</h3>
+                    <div class="pdf-actions">
+                        <button class="button" onclick="showPreview('DPI Document 4', 'GreerDPIFiles/dpi4.jpg')">Preview</button>
+                        <a href="/151958850.github.io/GreerDPIFiles/dpi4.jpg" download class="button primary">Download</a>
+                    </div>
+                </div>
+
+                <div class="pdf-item">
+                    <h3>DPI Document 5</h3>
+                    <div class="pdf-actions">
+                        <button class="button" onclick="showPreview('DPI Document 5', 'GreerDPIFiles/dpi5.jpg')">Preview</button>
+                        <a href="/151958850.github.io/GreerDPIFiles/dpi5.jpg" download class="button primary">Download</a>
+                    </div>
+                </div>
+
+                <div class="pdf-item">
+                    <h3>DPI Document 6</h3>
+                    <div class="pdf-actions">
+                        <button class="button" onclick="showPreview('DPI Document 6', 'GreerDPIFiles/dpi6.jpg')">Preview</button>
+                        <a href="/151958850.github.io/GreerDPIFiles/dpi6.jpg" download class="button primary">Download</a>
+                    </div>
+                </div>
+
+                <div class="pdf-item">
+                    <h3>DPI Document 7</h3>
+                    <div class="pdf-actions">
+                        <button class="button" onclick="showPreview('DPI Document 7', 'GreerDPIFiles/dpi7.jpg')">Preview</button>
+                        <a href="/151958850.github.io/GreerDPIFiles/dpi7.jpg" download class="button primary">Download</a>
+                    </div>
+                </div>
+
+                <div class="pdf-item">
+                    <h3>DPI Document 8</h3>
+                    <div class="pdf-actions">
+                        <button class="button" onclick="showPreview('DPI Document 8', 'GreerDPIFiles/dpi8.jpg')">Preview</button>
+                        <a href="/151958850.github.io/GreerDPIFiles/dpi8.jpg" download class="button primary">Download</a>
+                    </div>
+                </div>
+
+                <div class="pdf-item">
+                    <h3>DPI Document 9</h3>
+                    <div class="pdf-actions">
+                        <button class="button" onclick="showPreview('DPI Document 9', 'GreerDPIFiles/dpi9.jpg')">Preview</button>
+                        <a href="/151958850.github.io/GreerDPIFiles/dpi9.jpg" download class="button primary">Download</a>
+                    </div>
+                </div>
+
+                <div class="pdf-item">
+                    <h3>DPI Document 10</h3>
+                    <div class="pdf-actions">
+                        <button class="button" onclick="showPreview('DPI Document 10', 'GreerDPIFiles/dpi10.PNG')">Preview</button>
+                        <a href="/151958850.github.io/GreerDPIFiles/dpi10.PNG" download class="button primary">Download</a>
+                    </div>
+                </div> -->
+
                 <div class="pdf-item">
                     <h3>DPI Document 11</h3>
                     <div class="pdf-actions">
-                        <button class="button preview-button" onclick="showPreview('DPI Document 11', 'GreerDPIFiles/dpi11.pdf')">Preview</button>
+                        <button class="button" onclick="showPreview('DPI Document 11', 'GreerDPIFiles/dpi11.pdf')">Preview</button>
                         <a href="/151958850.github.io/GreerDPIFiles/dpi11.pdf" download class="button primary">Download</a>
                     </div>
                 </div>
@@ -325,7 +377,7 @@
                 <div class="pdf-item">
                     <h3>DPI Document 12</h3>
                     <div class="pdf-actions">
-                        <button class="button preview-button" onclick="showPreview('DPI Document 12', 'GreerDPIFiles/dpi12.pdf')">Preview</button>
+                        <button class="button" onclick="showPreview('DPI Document 12', 'GreerDPIFiles/dpi12.pdf')">Preview</button>
                         <a href="/151958850.github.io/GreerDPIFiles/dpi12.pdf" download class="button primary">Download</a>
                     </div>
                 </div>
@@ -333,15 +385,39 @@
                 <div class="pdf-item">
                     <h3>DPI Document 13</h3>
                     <div class="pdf-actions">
-                        <button class="button preview-button" onclick="showPreview('DPI Document 13', 'GreerDPIFiles/dpi13.pdf')">Preview</button>
+                        <button class="button" onclick="showPreview('DPI Document 13', 'GreerDPIFiles/dpi13.pdf')">Preview</button>
                         <a href="/151958850.github.io/GreerDPIFiles/dpi13.pdf" download class="button primary">Download</a>
                     </div>
                 </div>
 
+                <!-- <div class="pdf-item">
+                    <h3>DPI Document 14</h3>
+                    <div class="pdf-actions">
+                        <button class="button" onclick="showPreview('DPI Document 14', 'GreerDPIFiles/dpi14.PNG')">Preview</button>
+                        <a href="/151958850.github.io/GreerDPIFiles/dpi14.PNG" download class="button primary">Download</a>
+                    </div>
+                </div>
+
+                <div class="pdf-item">
+                    <h3>DPI Document 15</h3>
+                    <div class="pdf-actions">
+                        <button class="button" onclick="showPreview('DPI Document 15', 'GreerDPIFiles/dpi15.PNG')">Preview</button>
+                        <a href="/151958850.github.io/GreerDPIFiles/dpi15.PNG" download class="button primary">Download</a>
+                    </div>
+                </div>
+
+                <div class="pdf-item">
+                    <h3>DPI Document 16</h3>
+                    <div class="pdf-actions">
+                        <button class="button" onclick="showPreview('DPI Document 16', 'GreerDPIFiles/dpi16.PNG')">Preview</button>
+                        <a href="/151958850.github.io/GreerDPIFiles/dpi16.PNG" download class="button primary">Download</a>
+                    </div>
+                </div> -->
+
                 <div class="pdf-item">
                     <h3>DPI Document 17</h3>
                     <div class="pdf-actions">
-                        <button class="button preview-button" onclick="showPreview('DPI Document 17', 'GreerDPIFiles/dpi17.pdf')">Preview</button>
+                        <button class="button" onclick="showPreview('DPI Document 17', 'GreerDPIFiles/dpi17.pdf')">Preview</button>
                         <a href="/151958850.github.io/GreerDPIFiles/dpi17.pdf" download class="button primary">Download</a>
                     </div>
                 </div>
@@ -349,7 +425,7 @@
                 <div class="pdf-item">
                     <h3>DPI Document 18</h3>
                     <div class="pdf-actions">
-                        <button class="button preview-button" onclick="showPreview('DPI Document 18', 'GreerDPIFiles/dpi18.pdf')">Preview</button>
+                        <button class="button" onclick="showPreview('DPI Document 18', 'GreerDPIFiles/dpi18.pdf')">Preview</button>
                         <a href="/151958850.github.io/GreerDPIFiles/dpi18.pdf" download class="button primary">Download</a>
                     </div>
                 </div>
@@ -357,7 +433,7 @@
                 <div class="pdf-item">
                     <h3>DPI Document 19</h3>
                     <div class="pdf-actions">
-                        <button class="button preview-button" onclick="showPreview('DPI Document 19', 'GreerDPIFiles/dpi19.pdf')">Preview</button>
+                        <button class="button" onclick="showPreview('DPI Document 19', 'GreerDPIFiles/dpi19.pdf')">Preview</button>
                         <a href="/151958850.github.io/GreerDPIFiles/dpi19.pdf" download class="button primary">Download</a>
                     </div>
                 </div>
@@ -365,14 +441,13 @@
                 <div class="pdf-item">
                     <h3>DPI Document 20</h3>
                     <div class="pdf-actions">
-                        <button class="button preview-button" onclick="showPreview('DPI Document 20', 'GreerDPIFiles/dpi20.pdf')">Preview</button>
+                        <button class="button" onclick="showPreview('DPI Document 20', 'GreerDPIFiles/dpi20.pdf')">Preview</button>
                         <a href="/151958850.github.io/GreerDPIFiles/dpi20.pdf" download class="button primary">Download</a>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    
     <div id="pdf-modal" class="modal-viewer">
         <div class="modal-content">
             <div class="modal-header">
@@ -386,17 +461,19 @@
     </div>
 
     <script>
-        // Check if the device is mobile
-        function isMobile() {
-            return window.innerWidth <= 768;
-        }
-        
-        function showPreview(title, pdfPath) {
-            // On mobile, don't show preview
-            if (isMobile()) {
-                return;
-            }
+        function togglePDF(id) {
+            // Close any open PDF containers
+            document.querySelectorAll('.pdf-container.active').forEach(container => {
+                if (container.id !== id) {
+                    container.classList.remove('active');
+                }
+            });
             
+            // Toggle the clicked container
+            const container = document.getElementById(id);
+            container.classList.toggle('active');
+        }
+        function showPreview(title, pdfPath) {
             const modal = document.getElementById('pdf-modal');
             const iframe = document.getElementById('modal-iframe');
             const modalTitle = document.getElementById('modal-title');
@@ -425,13 +502,6 @@
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 closeModal();
-            }
-        });
-        
-        // Check screen resize and update UI accordingly
-        window.addEventListener('resize', function() {
-            if (isMobile()) {
-                closeModal(); // Close any open modals on resize to mobile
             }
         });
     </script>
